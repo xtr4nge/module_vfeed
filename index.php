@@ -208,36 +208,37 @@ Loading, please wait...
             </form>
             
             <? if ($vfeed_search != "") { ?>
-            <br>
-            
-	    <div class="rounded-top" align="center"> <?=strtoupper($vfeed_cve)?> </div>
-	    <div class="rounded-bottom general" style="width: auto; font-family: courier; font-size: 11px;">
+                <br>
                 
-                <?
-                
-                unset($output);
-                $exec = "$bin_cd includes/vFeed/; $bin_python vfeedcli.py search $vfeed_cve";
-                exec($exec, $output);
-                show($output);
-                
-                ?>
-                
-	    </div>
-            
-            <div class="rounded-top" align="center"> <?=strtoupper($vfeed_search)?> </div>
-	    <div class="rounded-bottom general" style="width: auto; font-family: courier; font-size: 11px;">
-                
-                <?
-                
-                unset($output);
-                $exec = "$bin_cd includes/vFeed/; $bin_python vfeedcli.py $vfeed_search $vfeed_cve";
-                //echo "DEBUG: " . $exec . "<br>";
-                exec($exec, $output);
-                show($output);
-                
-                ?>
-                
-	    </div>
+                <div class="rounded-top" align="center"> <?=strtoupper($vfeed_cve)?> </div>
+                <div class="rounded-bottom general" style="width: auto; font-family: courier; font-size: 11px;">
+                    
+                    <?
+                    
+                    unset($output);
+                    $exec = "$bin_cd includes/vFeed/; $bin_python vfeedcli.py search $vfeed_cve";
+                    exec($exec, $output);
+                    show($output);
+                    
+                    ?>
+                    
+                </div>
+                <? if ($vfeed_type != "base") { ?>
+                <div class="rounded-top" align="center"> <?=strtoupper($vfeed_search)?> </div>
+                <div class="rounded-bottom general" style="width: auto; font-family: courier; font-size: 11px;">
+                    
+                    <?
+                    
+                    unset($output);
+                    $exec = "$bin_cd includes/vFeed/; $bin_python vfeedcli.py $vfeed_search $vfeed_cve";
+                    //echo "DEBUG: " . $exec . "<br>";
+                    exec($exec, $output);
+                    show($output);
+                    
+                    ?>
+                    
+                </div>
+                <? } ?>
             <? } ?>
         </div>
 	
