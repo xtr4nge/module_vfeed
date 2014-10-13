@@ -1,0 +1,9 @@
+{
+    "information": "get_cve,get_cpe,get_cwe,get_capec,get_category",
+    "references": "get_refs,get_scip,get_osvdb,get_certvn,get_bid,get_iavm",
+    "risk": "get_risk,get_cvss",
+    "patchs": "get_ms,get_kb,get_aixapar,get_redhat,get_suse,get_debian,get_hp,get_mandriva,get_cisco,get_ubuntu,get_gentoo,get_fedora,get_vmware",
+    "assessment": "get_oval,get_nmap,get_nessus,get_openvas",
+    "defense": "get_snort,get_suricata",
+    "exploitation": "get_milw0rm,get_edb,get_saint,get_msf,get_d2"
+}
