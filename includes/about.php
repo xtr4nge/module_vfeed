@@ -8,4 +8,7 @@ vFeed utilizes XML-based format output to describe vulnerabilities, it can be le
 <br><b>Vulnerability Assessment & Exploitation IDs</b> (Metasploit, Saint Corporation, Nessus Scripts, Nmap, Exploit-DB, milw0rm)
 <br>
 <br><b>Vendors Security Alerts:</b> - Microsoft MS - Mandriva - Redhat - Cisco - Sun - Gentoo - Ubuntu - And more
+<br>
+<br>GitHub: <a href="https://github.com/toolswatch/vFeed" target="_blank">link</a>
+<br>Usage: <a href="https://github.com/toolswatch/vFeed/wiki/%5B2%5D-Usage" target="_blank">link</a>
 </font>
