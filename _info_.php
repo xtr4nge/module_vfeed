@@ -10,6 +10,7 @@ $mod_type="service";
 $mod_alias="vFeed";
 # EXEC
 $bin_danger = "/usr/share/FruityWifi/bin/danger";
+$bin_sudo = "/usr/bin/sudo";
 $bin_ifconfig = "/sbin/ifconfig";
 $bin_iwlist = "/sbin/iwlist";
 $bin_sh = "/bin/sh";
