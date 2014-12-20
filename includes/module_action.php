@@ -18,9 +18,9 @@
 ?>
 <?
 //include "../login_check.php";
+include "../../../config/config.php";
 include "../_info_.php";
-include "/usr/share/FruityWifi/www/config/config.php";
-include "/usr/share/FruityWifi/www/functions.php";
+include "../../../functions.php";
 
 // Checking POST & GET variables...
 if ($regex == 1) {
@@ -38,10 +38,12 @@ $install = $_GET['install'];
 if ($install == "update_$mod_name") {
 
     $exec = "$bin_chmod 755 update.sh";
-    exec("$bin_danger \"$exec\"" );
+    //exec("$bin_danger \"$exec\"" ); //DEPRECATED
+    exec_fruitywifi($exec);
 
-    $exec = "$bin_sudo ./update.sh > /usr/share/FruityWifi/logs/install.txt &";
-    exec("$bin_danger \"$exec\"" );
+    $exec = "$bin_sudo ./update.sh > $log_path/install.txt &";
+    //exec("$bin_danger \"$exec\"" ); //DEPRECATED
+    exec_fruitywifi($exec);
 
     header('Location: ../../install.php?module='.$mod_name);
     exit;
@@ -50,10 +52,12 @@ if ($install == "update_$mod_name") {
 if ($install == "install_$mod_name") {
 
     $exec = "$bin_chmod 755 install.sh";
-    exec("$bin_danger \"$exec\"" );
+    //exec("$bin_danger \"$exec\"" ); //DEPRECATED
+    exec_fruitywifi($exec);
 
-    $exec = "$bin_sudo ./install.sh > /usr/share/FruityWifi/logs/install.txt &";
-    exec("$bin_danger \"$exec\"" );
+    $exec = "$bin_sudo ./install.sh > $log_path/install.txt &";
+    //exec("$bin_danger \"$exec\"" ); //DEPRECATED
+    exec_fruitywifi($exec);
 
     header('Location: ../../install.php?module='.$mod_name);
     exit;

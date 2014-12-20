@@ -1,15 +1,15 @@
 <?
 $mod_name="vfeed";
-$mod_version="1.0";
-$mod_path="/usr/share/FruityWifi/www/modules/$mod_name";
-$mod_logs="/usr/share/FruityWifi/logs/$mod_name.log"; 
+$mod_version="1.1";
+$mod_path="/usr/share/fruitywifi/www/modules/$mod_name";
+$mod_logs="$log_path/$mod_name.log"; 
 $mod_logs_history="$mod_path/includes/logs/";
 $mod_panel="";
 $mod_logs_panel="disabled";
 $mod_type="service";
 $mod_alias="vFeed";
 # EXEC
-$bin_danger = "/usr/share/FruityWifi/bin/danger";
+$bin_danger = "/usr/share/fruitywifi/bin/danger";
 $bin_sudo = "/usr/bin/sudo";
 $bin_ifconfig = "/sbin/ifconfig";
 $bin_iwlist = "/sbin/iwlist";
