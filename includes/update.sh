@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cd vFeed
-./vfeedcli.py update
+./vfeedcli.py --update
 
 echo "..DONE.."
 exit
